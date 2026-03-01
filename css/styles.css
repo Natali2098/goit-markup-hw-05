@@ -518,6 +518,7 @@ img {
     line-height: 200%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-input::placeholder {
     color: #FFFFFF;
@@ -529,15 +530,16 @@ img {
     border-color: #31D0AA;
     outline: none;
 }
-
 .footer-btn {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .subscribe-btn {
     display: flex;
     align-items: center;
     border: none;
+    gap: 16px;
     
     border-radius: 4px;
     padding: 8px 24px;
@@ -564,10 +566,7 @@ img {
 
 
 .telegramm-icon {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
+    display: block;
 }
 /* #endregion */
 
@@ -585,8 +584,10 @@ justify-content: center;
 align-items: center;
 
 opacity: 0;
+visibility: hidden;
 pointer-events: none;
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -595,8 +596,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     width: 408px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     padding-left: 24px;
     padding-right: 24px;
@@ -679,6 +681,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2E2F42;
 
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus+.input-icon {
     fill: #4D5AE5;
@@ -700,6 +703,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 117%;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-comment:focus {
@@ -742,6 +746,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .agreement-icon {
     fill: #F4F4FD;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 }
 .visually-hidden:checked+.feedback-toggler {
