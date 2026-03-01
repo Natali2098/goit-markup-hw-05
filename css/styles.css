@@ -390,7 +390,7 @@ img {
     padding: 40px 32px 164px 32px;
     margin: 0;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -452,7 +452,7 @@ img {
 .footer-media-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
@@ -492,7 +492,7 @@ img {
 .footer-subscribe-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
@@ -515,7 +515,7 @@ img {
     padding-left: 16px;
 
     font-size: 12px;
-    line-height: 200%;
+    line-height: 2;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -549,7 +549,7 @@ img {
     background-color: #4D5AE5;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
     color: #FFFFFF;
@@ -593,6 +593,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 .modal {
     width: 408px;
@@ -636,7 +637,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .modal-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
@@ -652,7 +653,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .form-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 
@@ -660,6 +661,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 .input-wrapper {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .form-input {
@@ -700,7 +702,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
     font-weight: 400;
     font-size: 12px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -766,7 +768,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 
 .feedback-link {
-    line-height: 133%;
+    line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4D5AE5;
